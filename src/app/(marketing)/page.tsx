@@ -94,7 +94,7 @@ const HomePage = () => {
             <FooterLinkGroup
               title="Help"
               links={[
-                { label: "PPP Discounts", href: "#" },
+                { label: "EasyParityDeals Discounts", href: "#" },
                 { label: "Discount API", href: "#" },
               ]}
             />
@@ -110,7 +110,7 @@ const HomePage = () => {
           <div className="flex flex-col gap-8">
             <FooterLinkGroup
               title="Features"
-              links={[{ label: "PPP Discounts", href: "#" }]}
+              links={[{ label: "EasyParityDeals Discounts", href: "#" }]}
             />
             <FooterLinkGroup
               title="Tools"
@@ -207,9 +207,11 @@ function PricingCard({
           {maxNumberOfProducts}{" "}
           {maxNumberOfProducts === 1 ? "product" : "products"}
         </Feature>
-        <Feature>PPP discounts</Feature>
+        <Feature>EasyParityDeals discounts</Feature>
         {canAccessAnalytics && <Feature>Advanced analytics</Feature>}
-        {canRemoveBranding && <Feature>Remove Easy PPP branding</Feature>}
+        {canRemoveBranding && (
+          <Feature>Remove EasyParityDeals branding</Feature>
+        )}
         {canCustomizeBanner && <Feature>Banner customization</Feature>}
       </CardFooter>
     </Card>
